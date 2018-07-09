@@ -1,0 +1,17 @@
+{
+  "name": "pngr",
+  "version": "0.1.0",
+  "description": "A proxy that returns PNGs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Romeril <j.romeril@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-http-proxy": "^1.2.0",
+    "lodash": "^4.17.10",
+    "nightmare": "^3.0.1"
+  }
+}
