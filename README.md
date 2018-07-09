@@ -13,10 +13,10 @@ services:
     networks:
       - my-network
     environment:
-      - LISTEN_PORT=8081                    # optional. default value: 8081
-      - WIDTH=1920                          # optional. default value: 1920
-      - HEIGHT=1080                         # optional. default value: 1080
-      - UPSTREAM_URL=http://my-service:8080 # optional. default value: http://0.0.0.0
+      - LISTEN_PORT=8081                    # optional. default: 8081
+      - WIDTH=1920                          # optional. default: 1920
+      - HEIGHT=1080                         # optional. default: 1080
+      - UPSTREAM_URL=http://my-service:8080 # optional. default: http://0.0.0.0
 
   my-service:
     image: "example/my-service:latest"
@@ -27,7 +27,10 @@ services:
       - my-network
     depends_on:
       - pngr
+
+networks:
+  my-network:
 ```
 
 ## Features
-    * favicon support
+ * favicon support
